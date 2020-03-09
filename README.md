@@ -1,6 +1,6 @@
 # desmos-codegen
 
-This project was written by Maya Tung as part of an interview for Desmos.
+This project was written by Maya Tung as part of an interview for Desmos. The relevant code is the [ClassCode module](/src/modules/ClassCode.ts) and its [test file](/src/tests/ClassCode.test.ts)
 
 To install the project, run
 
