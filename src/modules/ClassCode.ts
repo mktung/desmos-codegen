@@ -60,7 +60,7 @@ export class ClassCode {
             arr.forEach((char: string) => {
                 arr_with_wildcard.push('wildcard');
                 arr_with_wildcard.push(char);
-            })
+            });
             arr = arr_with_wildcard;
         }
 
@@ -99,7 +99,12 @@ export class ClassCode {
             }
         });
 
-        return (invalid_chars.size == ClassCode.all_valid_chars.length);
+        if (invalid_chars.size == ClassCode.all_valid_chars.length) {
+            node = new Map();
+            return true;
+        }
+        
+        return false;
     }
 
     // generate new code
